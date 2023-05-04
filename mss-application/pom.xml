@@ -32,6 +32,7 @@
   </dependencies>
 
   <build>
+    <finalName>mss-application</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
