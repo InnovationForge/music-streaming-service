@@ -1,0 +1,27 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: demo-cloud-config-provider
+  profiles.active: native
+  cloud:
+    config:
+      fail-fast: true
+      server:
+        native:
+          search-locations: classpath:/config
+        health:
+          repositories:
+            native-config:
+              name: demo-application
+              profiles: default
+
+logging:
+  level:
+    ROOT: INFO
+
+management:
+  endpoint:
+    health:
+      show-details: always

@@ -1,0 +1,4 @@
+stub:
+  server:
+    port: 9090
+    files: wiremock

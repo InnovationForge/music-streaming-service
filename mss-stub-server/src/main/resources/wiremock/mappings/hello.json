@@ -1,0 +1,19 @@
+{
+  "mappings": [
+    {
+      "id": "f763b3d8-4895-11ed-b878-0242ac120002",
+      "name": "hello",
+      "request": {
+        "method": "GET",
+        "url": "/some/thing"
+      },
+      "response": {
+        "status": 200,
+        "bodyFileName": "/hello/helloService.json",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}
