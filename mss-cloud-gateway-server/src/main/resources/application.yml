@@ -1,0 +1,22 @@
+server:
+  port: 8089
+
+vob:
+  url: http://localhost:8080
+
+publickey:
+  path: /rsa-keys/public_rsa_key
+
+privatekey:
+  path: /rsa-keys/private_rsa_key
+
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
